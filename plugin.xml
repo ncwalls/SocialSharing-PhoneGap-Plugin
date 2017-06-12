@@ -9,6 +9,8 @@
   <description>
     Share text, images (and other files), or a link via the native sharing widget of your device.
     Android is fully supported, as well as iOS 6 and up. WP8 has somewhat limited support.
+    
+    This fork removes WRITE_EXTERNAL_STORAGE permission
   </description>
 
   <author>Eddy Verbruggen</author>
@@ -57,10 +59,6 @@
       <feature name="SocialSharing">
         <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
       </feature>
-    </config-file>
-
-    <config-file target="AndroidManifest.xml" parent="/*">
-      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     </config-file>
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
